@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Atención Primaria ALLAN KARDEC</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">    
+                 <!-- Header with logo -->
+    <header class="text-center">
+        <img src="logo.jpg.png" alt="Logo Allan Kardec" class="img-fluid" style="max-width: 125px;">
+    </header>
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-heartbeat me-2"></i> Posta Sanitara ALLAN KARDEC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#consulta">Consulta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="medical-particles">
+            <div class="particle" style="left: 10%; width: 4px; height: 4px; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 20%; width: 6px; height: 6px; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 30%; width: 3px; height: 3px; animation-delay: 4s;"></div>
+            <div class="particle" style="left: 40%; width: 5px; height: 5px; animation-delay: 6s;"></div>
+            <div class="particle" style="left: 50%; width: 4px; height: 4px; animation-delay: 8s;"></div>
+            <div class="particle" style="left: 60%; width: 6px; height: 6px; animation-delay: 10s;"></div>
+            <div class="particle" style="left: 70%; width: 3px; height: 3px; animation-delay: 12s;"></div>
+            <div class="particle" style="left: 80%; width: 5px; height: 5px; animation-delay: 14s;"></div>
+            <div class="particle" style="left: 90%; width: 4px; height: 4px; animation-delay: 1s;"></div>
+        </div>
+        <div class="pulse-bg"></div>
+        <div class="pulse-bg"></div>
+        <div class="pulse-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title floating">Centro de Atención Primaria</h1>
+            <h2 class="hero-subtitle">ALLAN KARDEC</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="600">Tu salud es nuestra prioridad. Atención médica integral con tecnología de vanguardia</p>
+            <a href="#consulta" class="btn btn-light btn-lg mt-3" data-aos="zoom-in" data-aos-delay="800">
+                <i class="fas fa-stethoscope me-2"></i>Solicitar Consulta
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Imágenes -->
+    <section id="servicios" class="images-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in" data-aos="fade-up">
+                <span style="color: var(--primary-green); font-weight: bold;">Nuestros Servicios</span>
+            </h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="image-card">
+                        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=500&h=300&fit=crop" alt="Consulta Médica General">
+                        <div class="image-overlay">
+                            <h5>Consulta Médica General</h5>
+                            <p>Atención integral para toda la familia con los mejores especialistas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-card">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop" alt="Laboratorio Clínico">
+                        <div class="image-overlay">
+                            <h5>Laboratorio Clínico</h5>
+                            <p>Análisis clínicos con tecnología de última generación y resultados rápidos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="image-card">
+                        <img src="https://imgs.search.brave.com/nBkNZqrHf1ZNMGE-Q7wLwfjB0PJ8m24wFrPJQ8vQld0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQx/MTU2NTU2OC9lcy9m/b3RvL2FtYnVsYW5j/aWEtdCVDMyVBOWNu/aWNvLWVuLXVyZ2Vu/Y2lhcy1tJUMzJUE5/ZGljYXMtcmV0cmF0/by1kZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9U3FuR0xX/TnJxUk9fZnozVDRU/Z3JuQVMzQXNnV1RZ/a3FxMG9DTkRaQl8z/UT0" alt="Emergencias 24/7">
+                        <div class="image-overlay">
+                            <h5>Emergencias 24/7</h5>
+                            <p>Servicio de urgencias disponible las 24 horas del día, todos los días del año.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal con Artículos y Sidebar -->
+    <section id="articulos" class="main-content">
+        <div class="container">
+            <div class="row">
+                <!-- Artículos -->
+                <div class="col-lg-8">
+                    <h2 class="mb-5 fade-in" data-aos="fade-right">
+                        <span style="color: var(--primary-green); font-weight: bold;">Artículos de Salud</span>
+                    </h2>
+                    <div class="articles-container">
+                        <article class="article-card fade-in" data-aos="flip-left" data-aos-delay="100">
+                            <div class="article-meta">Nuevo</div>
+                            <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=200&fit=crop');"></div>
+                            <div class="article-content">
+                                <h3 class="article-title">Importancia de los Chequeos Preventivos</h3>
+                                <p class="article-description">Los exámenes médicos regulares son fundamentales para detectar enfermedades en etapas tempranas y mantener un estilo de vida saludable. Conoce cuáles son los estudios que debes realizarte según tu edad.</p>
+                            </div>
+                        </article>
+
+                        <article class="article-card fade-in" data-aos="flip-left" data-aos-delay="200">
+                            <div class="article-meta">Destacado</div>
+                            <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=200&fit=crop');"></div>
+                            <div class="article-content">
+                                <h3 class="article-title">Alimentación Saludable para Toda la Familia</h3>
+                                <p class="article-description">Una dieta equilibrada es la base de una vida saludable. Te compartimos consejos nutricionales y recetas fáciles para implementar hábitos alimentarios saludables en tu hogar.</p>
+                            </div>
+                        </article>
+
+                        <article class="article-card fade-in" data-aos="flip-left" data-aos-delay="300">
+                            <div class="article-meta">Tendencia</div>
+                            <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop');"></div>
+                            <div class="article-content">
+                                <h3 class="article-title">Ejercicios para Fortalecer el Sistema Inmune</h3>
+                                <p class="article-description">La actividad física regular fortalece nuestras defensas naturales. Descubre qué ejercicios son más efectivos y cómo integrarlos en tu rutina diaria para mejorar tu salud integral.</p>
+                            </div>
+                        </article>
+
+                        <article class="article-card fade-in" data-aos="flip-left" data-aos-delay="400">
+                            <div class="article-meta">Salud Mental</div>
+                            <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=200&fit=crop');"></div>
+                            <div class="article-content">
+                                <h3 class="article-title">Manejo del Estrés y Técnicas de Relajación</h3>
+                                <p class="article-description">El estrés crónico puede afectar significativamente nuestra salud física y mental. Aprende técnicas efectivas de relajación y manejo del estrés para mejorar tu calidad de vida.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sidebar de Búsqueda -->
+                <div class="col-lg-4">
+                    <aside class="search-sidebar fade-in" data-aos="fade-left">
+                        <h4><i class="fas fa-search me-2"></i>Buscar Información</h4>
+                        <form class="search-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control search-input" placeholder="¿Qué información médica buscas?">
+                            </div>
+                            <button type="submit" class="btn search-btn w-100">
+                                <i class="fas fa-search me-2"></i>Buscar
+                            </button>
+                        </form>
+                        
+                        <hr class="my-4">
+                        
+                        <h5 style="color: var(--primary-green);">Servicios Destacados</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Medicina General</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Pediatría</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Ginecología</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Cardiología</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Laboratorio</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Consulta -->
+    <section id="consulta" class="consultation-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-container" data-aos="zoom-in">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-user-md me-2"></i>Solicitar Consulta Médica
+                        </h2>
+                        <p class="text-center mb-4">Completa el formulario y nos pondremos en contacto contigo vía WhatsApp</p>
+                        
+                        <form id="consultationForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" id="nombrePaciente" class="form-control form-control-custom" placeholder="Nombre completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" id="telefonoPaciente" class="form-control form-control-custom" placeholder="Número de WhatsApp" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="email" id="emailPaciente" class="form-control form-control-custom" placeholder="Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <select id="tipoConsulta" class="form-control form-control-custom">
+                                        <option>Tipo de consulta</option>
+                                        <option>Medicina General</option>
+                                        <option>Pediatría</option>
+                                        <option>Ginecología</option>
+                                        <option>Cardiología</option>
+                                        <option>Urgencias</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <textarea id="descripcionConsulta" class="form-control form-control-custom" rows="4" placeholder="Describe tu consulta o síntomas..."></textarea>
+                            
+                            <div class="text-center">
+                                <button type="button" id="whatsappBtn" class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp me-2"></i>Enviar consulta por WhatsApp
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="location-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in" data-aos="fade-up">
+                <span style="color: var(--primary-green); font-weight: bold;">
+                    <i class="fas fa-map-marker-alt me-2"></i>Nuestra Ubicación
+                </span>
+            </h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="map-container">
+                        <!-- AQUÍ COLOCA TUS COORDENADAS -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15983.3205166998!2d-66.8600387!3d-29.405426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427db9e6aa52439%3A0x58b60ab58a814e86!2sAsociaci%C3%B3n%20Esp%C3%ADrita%20Tercera%20Revelaci%C3%B3n!5e0!3m2!1ses!2sar!4v1636725320142!5m2!1ses!2sar" 
+                             height="400" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info p-4">
+                        <h4 style="color: var(--primary-green); margin-bottom: 30px;">
+                            <i class="fas fa-info-circle me-2"></i>Información de Contacto
+                        </h4>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-map-marker-alt text-success me-3"></i>
+                            <span><strong>Dirección:</strong> Segundo B. Pelliza 795,La Rioja </span>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-phone text-success me-3"></i>
+                            <span><strong>Teléfono:</strong> +54 9 380 4115334</span>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-envelope text-success me-3"></i>
+                            <span><strong>Email:</strong> contacto@allankardec.com</span>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-clock text-success me-3"></i>
+                            <span><strong>Horarios:</strong></span>
+                            <div class="ms-4 mt-2">
+                                <p class="mb-1">Lunes a Viernes: 8:00 - 20:00</p>
+                                <p class="mb-1">Sábados: 9:00 - 15:00</p>
+                                <p class="mb-0">Emergencias: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer-medical">
+        <div class="container">
+            <div class="social-icons" data-aos="fade-up">
+                <a href="#" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <h5 style="color: var(--light-green);">Centro ALLAN KARDEC</h5>
+                    <p>Brindando atención médica de calidad con un enfoque humano y tecnología de vanguardia para toda la comunidad.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5 style="color: var(--light-green);">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li>Medicina General</li>
+                        <li>Pediatría</li>
+                        <li>Ginecología</li>
+                        <li>Cardiología</li>
+                        <li>Laboratorio Clínico</li>
+                        <li>Emergencias 24/7</li>
+                    </ul>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 style="color: var(--light-green);">Contacto Rápido</h5>
+                    <p><i class="fas fa-phone me-2"></i>+54 9 380 4 115334</p>
+                    <p><i class="fas fa-envelope me-2"></i>contacto@allankardec.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Psje 2º PELLIZA, LA RIOJA</p>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <p>&copy; 2024 Centro de Atención Primaria ALLAN KARDEC. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
