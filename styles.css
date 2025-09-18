@@ -1,0 +1,585 @@
+/* CSS Personalizado para Centro ALLAN KARDEC */
+
+:root {
+    --primary-green: #18c06f;
+    --secondary-green: #3eb142;
+    --light-green: #81c784;
+    --medical-blue: #2b6daf;
+    --medical-cyan: #00acc1;
+    --white: #ffffffb2;
+    --light-gray: #f5f5f5;
+    --dark-text: #302b2b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar con diseño médico innovador */
+.navbar-custom {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--medical-blue) 100%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(90, 190, 142, 0.788);
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-custom.scrolled {
+    background: rgba(87, 211, 151, 0.95);
+    backdrop-filter: blur(15px);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--white) !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.navbar-nav .nav-link {
+    color: var(--white) !important;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--light-green) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: var(--light-green);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hero Section con efectos médicos */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--medical-blue) 50%, var(--medical-cyan) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    animation: fadeInUp 1s ease;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+.pulse-bg {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.pulse-bg:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+.pulse-bg:nth-child(2) { top: 60%; right: 10%; animation-delay: 2s; }
+.pulse-bg:nth-child(3) { bottom: 20%; left: 50%; animation-delay: 1s; }
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.2); opacity: 0.1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sección de imágenes con efecto médico */
+.images-section {
+    padding: 80px 0;
+    background: linear-gradient(45deg, var(--light-gray) 0%, #ffffff 100%);
+}
+
+.image-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    margin-bottom: 30px;
+}
+
+.image-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.image-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.image-card:hover img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(45, 143, 95, 0.9));
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.image-card:hover .image-overlay {
+    transform: translateY(0);
+}
+
+/* Contenedor principal con sidebar */
+.main-content {
+    padding: 80px 0;
+}
+
+/* Artículos médicos con diseño innovador */
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.article-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.article-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.article-content {
+    padding: 25px;
+}
+
+.article-title {
+    color: var(--primary-green);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.article-description {
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.article-meta {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(45, 143, 95, 0.9);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* Sidebar de búsqueda */
+.search-sidebar {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 30px;
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+}
+
+.search-sidebar h4 {
+    color: var(--primary-green);
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.search-input {
+    border: 2px solid var(--light-green);
+    border-radius: 15px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 20px rgba(45, 143, 95, 0.2);
+    outline: none;
+}
+
+.search-btn {
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(45, 143, 95, 0.3);
+}
+
+/* Formulario de consulta médica */
+.consultation-form {
+    background: linear-gradient(135deg, var(--primary-green), var(--medical-blue));
+    color: white;
+    padding: 60px 0;
+    margin: 80px 0;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-control-custom {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.form-control-custom:focus {
+    background: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    color: white;
+}
+
+/* Sección de ubicación */
+.location-section {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    height: 400px;
+}
+
+.contact-info {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1rem;
+}
+
+/* Footer médico */
+.footer-medical {
+    background: linear-gradient(135deg, var(--dark-text), #1a1a1a);
+    color: white;
+    padding: 50px 0 30px;
+}
+
+.social-icons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: var(--dark-text);
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+    color: var(--primary-green);
+}
+
+.social-icon.facebook:hover { background: #3b5998; color: white; }
+.social-icon.twitter:hover { background: #1da1f2; color: white; }
+.social-icon.instagram:hover { background: #e1306c; color: white; }
+.social-icon.linkedin:hover { background: #0077b5; color: white; }
+.social-icon.youtube:hover { background: #ff0000; color: white; }
+.social-icon.whatsapp:hover { background: #25d366; color: white; }
+
+/* Efectos de scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .articles-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+        background: rgba(45, 143, 95, 0.95);
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .search-sidebar {
+        margin-top: 30px;
+        position: static;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .form-container {
+        margin: 0 15px;
+        padding: 30px 20px;
+    }
+
+    .contact-info {
+        margin-top: 30px;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .image-card {
+        margin-bottom: 20px;
+    }
+
+    .article-card {
+        margin-bottom: 20px;
+    }
+
+    .pulse-bg {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Animaciones adicionales */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Efectos de partículas médicas */
+.medical-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float-particle 15s infinite linear;
+}
+
+@keyframes float-particle {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Navbar toggler personalizado */
+.navbar-toggler {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Animaciones de entrada para elementos */
+@keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Hover effects para botones */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Estilo para formularios */
+.form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(45, 143, 95, 0.25);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-green);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-green);
+}
